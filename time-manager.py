@@ -307,7 +307,7 @@ def fileManager(requestUrl1):
     
     saver = open("bizarar_data.txt" ,"w")
     saver.write(str(finalData))
-    saver.close()s
+    saver.close()
     
     now = datetime.datetime.now()
     currentTime = now.strftime("%H:%M:%S")
