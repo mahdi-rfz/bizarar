@@ -7,6 +7,7 @@ import datetime
 import getpass
 
 
+#Hello, friend im glad you're here
 
 print("::::::::::(The script started working)::::::::::")
 
@@ -96,7 +97,7 @@ def requestManager():
             sys.exit()
         try :
             if currentTime >= 0 and currentTime < 1 :
-                time.sleep(3600) 
+                time.sleep(3600) #3600s <<<<<<<<<<--------------------------1h
             elif currentTime >= 1 and currentTime < 2:
                 time.sleep(3600)
             elif currentTime >= 2 and currentTime < 3 :
