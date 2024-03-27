@@ -84,49 +84,71 @@ def requestManager():
     
     while True :
         currentTime = timeManager()
-        
         if currentTime == None :
             print("You have problem with time API")
             time.sleep(5)
             sys.exit()
         try :
-            if currentTime >= 6 and currentTime < 8 :
-                requestUrl1 = requests.get(apiUrl1)
-                fileManager(requestUrl1)
-                time.sleep(7500) # 2h && 5 min
+            if currentTime >= 0 and currentTime < 1 :
+                time.sleep(3600) # 2h && 5 min
+            elif currentTime >= 1 and currentTime < 2:
+                time.sleep(3600)
+            elif currentTime >= 2 and currentTime < 3 :
+                time.sleep(3600)
+            elif currentTime >= 3 and currentTime < 4 :
+                time.sleep(3600)
+            elif currentTime >= 4 and currentTime < 5 :
+                time.sleep(3600)
+            elif currentTime >= 5 and currentTime < 6 :
+                time.sleep(3600)
+            elif currentTime >= 6 and currentTime < 7 :
+                time.sleep(3600)
+            elif currentTime >= 7 and currentTime < 8 :
+                time.sleep(3600)
             elif currentTime >= 8 and currentTime < 9 :
-                requestUrl1 = requests.get(apiUrl2)
-                fileManager(requestUrl1)
-                time.sleep(3900) #1h && 5min
+                time.sleep(3600)
             elif currentTime >= 9 and currentTime < 10 :
-                requestUrl1 = requests.get(apiUrl1)
-                fileManager(requestUrl1)
-                time.sleep(3900) #1h && 5min
+                time.sleep(3600)
             elif currentTime >= 10 and currentTime < 11 :
-                requestUrl1 = requests.get(apiUrl2)
-                fileManager(requestUrl1)
-                time.sleep(3900) #1h && 5min
+                time.sleep(3600)
             elif currentTime >= 11 and currentTime < 12 :
+                time.sleep(3600)
+            elif currentTime >= 12 and currentTime < 13 :
+                time.sleep(3600)
+            elif currentTime >= 13 and currentTime < 14 :
+                time.sleep(3600)
+            elif currentTime >= 14 and currentTime < 15 :
+                time.sleep(3600)
+            elif currentTime >= 15 and currentTime < 16 :
+                time.sleep(3600)
+            elif currentTime >= 16 and currentTime < 17 :
+                time.sleep(3600)
+            elif currentTime >= 17 and currentTime < 18 :
+                time.sleep(3600)
+            elif currentTime >= 18 and currentTime < 19 :
+                print("im here")
                 requestUrl1 = requests.get(apiUrl1)
                 fileManager(requestUrl1)
-                time.sleep(3900) #1h && 5min
-            elif currentTime >= 12 and currentTime < 14 :
-                requestUrl1 = requests.get(apiUrl2)
-                fileManager(requestUrl1)
-                time.sleep(7500) # 2h && 5 min
-            elif currentTime >= 14 and currentTime < 18 :
+                print("im here")
+                time.sleep(3600)
+            elif currentTime >= 19 and currentTime < 20 :
+                time.sleep(3600)
                 requestUrl1 = requests.get(apiUrl1)
                 fileManager(requestUrl1)
-                time.sleep(14700) # 4h && 5min
-            elif currentTime >= 18 and currentTime < 23 :
-                requestUrl1 = requests.get(apiUrl2)
-                fileManager(requestUrl1)
-                time.sleep(21900) # 6h && 5 min
-            elif currentTime >= 0 and currentTime < 6 :
-                requestUrl1 = requests.get(apiUrl2)
-                fileManager(requestUrl1)
-                time.sleep(18300) # 6h && 5 min
-            
+            elif currentTime >= 20 and currentTime < 21 :
+                time.sleep(3600)
+            elif currentTime >= 21 and currentTime < 22 :
+                time.sleep(3600)
+            elif currentTime >= 22 and currentTime < 23 :
+                time.sleep(3600)
+            elif currentTime >= 23 and currentTime < 24 :
+                time.sleep(3600)
+
+            print("hello")
+
+
+
+
         except Exception as e :
             requestUrl1 = requests.get(apiUrl1)
             requestUrl1 = requests.get(apiUrl2)
