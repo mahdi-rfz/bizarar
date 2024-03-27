@@ -6,6 +6,11 @@ import os
 import datetime
 import getpass
 
+
+
+print("::::::::::(The script started working)::::::::::")
+
+
 def logAction (erorText):
     if os.name == "nt":
         try :
