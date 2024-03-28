@@ -93,8 +93,6 @@ def requestManager():
         
         if currentTime == None :
             print("You have problem with time API")
-            time.sleep(5)
-            sys.exit()
         try :
             if currentTime >= 0 and currentTime < 1 :
                 time.sleep(3600) #3600s <<<<<<<<<<--------------------------1h
@@ -160,6 +158,9 @@ def requestManager():
                 time.sleep(3600)
             elif currentTime >= 23 and currentTime < 24 :
                 time.sleep(3600)
+            else :
+                time.sleep(3600)
+
             
         except Exception as e :
             requestUrl1 = requests.get(apiUrl1)
